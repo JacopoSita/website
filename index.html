@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<Html lang = "it">
+<Head>
+  <Title> Jacopo Sita</Title>
+  <Meta charset = "utf-8"></Meta>
+  <Meta name = "viewport" content = "width = device-width,initial-scale=1"></Meta>
+  <Link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></Link>
+  <Link rel = "stylesheet" type = "text/css" href = "jacoposita.css" />
+  <Link href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel = "stylesheet"></Link>
+  <Link href = "https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel = "stylesheet"></Link>
+  <Script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </Script>
+  <Script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </Script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="./javascripts/parallax.js"></script>
+  <script>
+    $(function(){ 
+        $(".footer").mouseenter(function()
+        {
+            $(this).css("background-color","#1C1C1C");  
+        }),
+        $(".footer").mouseleave(function()
+        {
+            $(this).css("background-color","#848484");   
+        })
+    });
+  </script>   
+</Head>    
+    
+<body>
+<section class="header">
+    <div class="parallax-window-header" id="header" data-parallax="scroll" data-image-src="./images/alfanera.jpg">
+    </div>
+    <div id="space"></div>
+</section>  
+<section class="bio">
+   
+    <h4>A PROPOSITO DI ME</h4>
+    
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-4">
+            <div class="round">
+                <img class="img-responsive"src="images/jacoposita.jpg" alt="Jacopo Sita">
+            </div>
+        </div>
+        <div class="col-xs-4">
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed elementum nibh. Morbi venenatis euismod viverra. Praesent venenatis eros sed gravida laoreet. Morbi interdum dignissim ultrices. Praesent porttitor, justo non faucibus fermentum, risus tellus finibus enim, a vestibulum lectus libero eget magna. Nunc iaculis felis id ligula scelerisque, in bibendum sapien convallis. Sed pellentesque elit vitae enim blandit, a volutpat nisi fermentum. Sed tempor vestibulum aliquam. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur dolor nunc, maximus vel lectus vitae, blandit cursus augue. Quisque lobortis, sem vitae tincidunt volutpat, quam lacus pellentesque diam, in bibendum lorem nunc ac ante. Curabitur mollis cursus nibh in condimentum. Suspendisse id tempus justo, vitae pulvinar odio.
+        </p>
+        <p>
+        Aenean metus ante, porta in sollicitudin in, mollis fermentum mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque id faucibus ipsum. Morbi molestie posuere nisl sed viverra. In vel ante arcu. Mauris rutrum at metus id mollis. Integer rutrum lectus eget nulla malesuada, et sagittis neque consequat. Integer imperdiet mattis quam consequat facilisis. Mauris in faucibus ipsum, vitae dictum nulla. Proin nec dolor ipsum. Nulla maximus ligula nulla, congue tincidunt leo semper nec.
+        </p>
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+    
+    <div id="space"></div>
+</section>
+<section class="portfolio">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="./images/draw.jpg">
+        <h3>Portfolio</h3>
+    </div>
+    
+    <div id="space"></div>
+    
+    <div class="row">
+        <div class="col-xs-2 col-md-1"></div>
+
+        <div class="col-xs-6 col-md-3">
+            <div class="thumbnail">
+                <div class="hovereffect">
+                    <img class="img-responsive" data-toggle="modal" data-target="#crossturismo"src="./projects/crossturismo/header.jpg" alt="Crossturismo">
+                </div>    
+                <div class="caption">
+                    <h3 id="project">Granturismo</h3>
+                </div>
+            </div>    
+        </div>
+        
+       <div class="modal fade bs-example-modal-lg" id="crossturismo" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div id="carousel-crossturismo" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                 <img class="img-responsive" src="./projects/crossturismo/img1.jpg" alt="First image">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="./projects/crossturismo/img2.jpg" alt="Second image">
+                </div>
+                  <div class="item">
+                  <img class="img-responsive" src="./projects/crossturismo/img3.jpg" alt="Third image">
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-crossturismo" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-crossturismo" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+        
+        
+        <div class="col-xs-6 col-md-3">
+            <div class="thumbnail">
+                <div class="hovereffect">
+                    <img class="img-responsive" data-toggle="modal" data-target="#somesketches" src="./projects/somesketches/header.jpg" alt="Some sketches">
+                </div>    
+                <div class="caption">
+                    <h3 id="project">Some sketches</h3>
+                </div>
+            </div>
+        </div>
+         
+       <div class="modal fade bs-example-modal-lg" id="somesketches" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div id="carousel-sketch" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                 <img class="img-responsive" src="./projects/somesketches/img1.jpg" alt="First image">
+                </div>
+                <div class="item">
+                  <img class="img-responsive" src="./projects/somesketches/img2.jpg" alt="Second image">
+                </div>
+                  <div class="item">
+                  <img class="img-responsive" src="./projects/somesketches/img3.jpg" alt="Third image">
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-sketch" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carousel-sketch" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+        
+       
+    </div>
+
+<div id="space"></div>
+
+    
+</section>    
+<section class="contact">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="./images/contacts.jpg">
+        <h3 id="project">CONTATTI</h3>
+    </div> 
+   <div id="space"></div>
+   <content>
+        <div class="row">
+            <div class="col-xs-2 col-md-5"></div>
+            <div class="col-xs-2 col-md-2">
+                <div class="row">
+                    <div class="col-xs-2 col-md-4">
+                        <span class="glyphicon glyphicon-map-marker"></span>
+                    </div>
+                    <div class="col-xs-2 col-md-8">Bologna, IT</div>
+                </div>
+                <div class="row">
+                <br>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 col-md-4">
+                       <span class="glyphicon glyphicon-earphone"></span>
+                    </div>
+                    <div class="col-xs-2 col-md-8">+39 348 2733596</div>
+                </div>
+                 <div class="row">
+                <br>
+                </div>
+                 <div class="row">
+                    <div class="col-xs-2 col-md-4">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                    </div>
+                    <div class="col-xs-2 col-md-8">jacoposita@gmail.com</div>
+                </div>
+              
+            </div>
+            <div class="col-xs-2 col-md-5"></div>
+            
+        </div> 
+  </content> 
+    <div id="space2"></div>
+</section>
+
+<div class="footer">
+<p>ciao</p>
+</div>
+</body>
+</Html>
